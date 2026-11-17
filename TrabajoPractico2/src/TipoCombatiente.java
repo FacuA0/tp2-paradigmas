@@ -1,5 +1,0 @@
-public enum TipoCombatiente {
-    CULTIVADOR_ESPADA,
-    HECHICERO_VACIO,
-    MONJE_CUERPO_CELESTIAL
-}

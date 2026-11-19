@@ -174,12 +174,6 @@ public abstract class Combatiente {
         }
     }
 
-    public void procesarEfectos() {
-        for (EfectoTemporal e : getEfectos()) {
-            procesarEfecto(e);
-        }
-    }
-
     public List<EfectoTemporal> getEfectos() { return List.copyOf(efectos.keySet()); }
 
     public boolean tieneEfecto(EfectoTemporal efecto) { return efectos.containsKey(efecto); }
@@ -222,7 +216,7 @@ public abstract class Combatiente {
     }
     
     public void curar(int cantidad, Combatiente c) {
-        c.recibirCuracion(cantidad);;
+        c.recibirCuracion(cantidad);
     }
     
     public void recibirCuracion(int cantidad) {
